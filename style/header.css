@@ -1,0 +1,192 @@
+.header {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: white;
+  border-bottom: 1px solid rgb(231, 229, 229);
+  z-index: 100;
+}
+.left_section {
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+.middle_section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 50px;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.right_section {
+  width: 180px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 24px;
+  flex-shrink: 0;
+}
+.hamburger_menue {
+  height: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.channel_logo {
+  height: 40px;
+  width: 100px;
+}
+.search_bar {
+  flex: 1;
+  height: 35px;
+  border: 0.5px solid rgb(201, 196, 196);
+  font-size: 15px;
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 5px rgb (0, 0, 0.5);
+  width: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-left: 20px;
+  outline: none;
+}
+.search_bar::placeholder {
+  font-family: Roboto, Ariel;
+  font-size: 15px;
+}
+.saerch_logo {
+  height: 20px;
+  margin-top: 7px;
+}
+.search_button {
+  border: 0.5px solid rgb(201, 196, 196);
+  background-color: rgb(233, 228, 228);
+  width: 55px;
+  margin-left: -1px;
+  height: 38px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+}
+.tooltip {
+  position: absolute;
+  background-color: rgb(136, 135, 135);
+  padding: 6px;
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  bottom: -30px;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.search_button:hover {
+  cursor: pointer;
+  .tooltip {
+    opacity: 1;
+  }
+}
+.mic_logo {
+  height: 20px;
+  margin-top: 4px;
+}
+.mic_button {
+  background-color: rgb(241, 239, 239);
+  border: none;
+  margin-left: 9px;
+  height: 35px;
+  width: 35px;
+  border-radius: 15px;
+  position: relative;
+}
+.mic_button:hover {
+  cursor: pointer;
+  .tooltip {
+    opacity: 1;
+  }
+}
+.video_logo {
+  height: 22px;
+}
+.video_button {
+  background-color: white;
+  border: none;
+  height: 35px;
+  margin-top: 5px;
+  position: relative;
+}
+.video_button:hover {
+  cursor: pointer;
+  .tooltip {
+    opacity: 1;
+  }
+}
+
+.grid_logo {
+  height: 22px;
+}
+.grid_button {
+  background-color: white;
+  border: none;
+  height: 30px;
+  margin-top: 5px;
+  position: relative;
+}
+.grid_button:hover {
+  cursor: pointer;
+  .tooltip {
+    opacity: 1;
+  }
+}
+.notify_logo {
+  height: 22px;
+}
+.notify_button {
+  background-color: white;
+  border: none;
+  height: 30px;
+  position: relative;
+  margin-top: 5px;
+}
+.notify_button:hover {
+  cursor: pointer;
+  .tooltip {
+    opacity: 1;
+  }
+}
+
+.notification_count {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color: red;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 100%;
+}
+.profile_logo {
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+}
+.profile_button {
+  background-color: white;
+  border: none;
+  height: 30px;
+  width: 30px;
+}
